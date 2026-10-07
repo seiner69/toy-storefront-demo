@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ecebe7">
+  <meta name="description" content="REPLICA LAB 玩具模型概念商店。探索原创收藏模型、查看细节、建立收藏清单，体验完整的独立站购物流程。">
+  <title>REPLICA LAB — 把热爱，摆上桌面。</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.1 5.9a5.3 5.3 0 0 0-7.5 0L12 6.5l-.6-.6a5.3 5.3 0 0 0-7.5 7.5L12 21l8.1-7.6a5.3 5.3 0 0 0 0-7.5Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+  </defs></svg>
+  <a href="#main" class="skip-link">跳到主要内容</a>
+  <div class="announcement"><span>一个关于玩具与收藏的概念商店</span><span class="announcement-note">独立站练习 · 无真实交易</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="REPLICA LAB 首页"><span class="brand-mark" aria-hidden="true"></span><span>REPLICA <b>LAB</b><small>玩具模型研究所</small></span></a>
+    <nav class="desktop-nav" aria-label="主要导航"><a href="#collection">探索模型</a><a href="#details">细节观察</a><a href="#journal">收藏笔记</a><a href="#about">关于我们</a></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="search-button" aria-label="搜索模型"><svg class="icon"><use href="#i-search"/></svg></button>
+      <button class="icon-button favorites-button" id="favorites-button" aria-label="查看收藏清单"><svg class="icon"><use href="#i-heart"/></svg><span id="favorite-count" class="mini-count" hidden>0</span></button>
+      <button class="cart-trigger" id="cart-button" aria-label="打开购物车"><svg class="icon"><use href="#i-bag"/></svg><span class="cart-label">购物车</span><span id="cart-count">0</span></button>
+      <button class="icon-button mobile-menu-button" id="menu-button" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-menu"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="手机导航" hidden><a href="#collection">探索模型</a><a href="#details">细节观察</a><a href="#journal">收藏笔记</a><a href="#about">关于我们</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="overline"><span class="status-dot"></span> 为模型爱好者而作</p><h1 id="hero-title">把热爱，<br>摆上桌面<span class="orange-period">。</span></h1><p class="hero-description">喜欢轮廓，也在意细节。<br>从经典造型到原创科幻，找到下一件想收藏的玩具。</p><div class="hero-cta"><a class="button button-dark" href="#collection">探索全部模型<svg class="icon"><use href="#i-arrow"/></svg></a><button class="text-button" data-open-product="atlas">认识 ATLAS C1 <svg class="icon"><use href="#i-arrow-up"/></svg></button></div><div class="hero-footnote"><span>展示型玩具模型</span><span>原创概念系列</span><span>为桌面收藏而设计</span></div></div>
+      <div class="hero-stage" id="hero-stage"><span class="stage-word" aria-hidden="true">ATLAS</span><div class="stage-guide guide-top"></div><div class="stage-guide guide-bottom"></div><div class="hero-product-wrap"><img class="hero-product" src="assets/atlas.png" alt="ATLAS C1 石墨黑玩具模型，带橙色模型端帽" width="1536" height="1024" fetchpriority="high"><div class="product-shadow"></div></div><div class="stage-label"><span class="stage-label-dot"></span><div><strong>ATLAS C1</strong><span>经典轮廓 / 石墨黑</span></div><button class="round-button" data-open-product="atlas" aria-label="查看 ATLAS C1 详情"><svg class="icon"><use href="#i-arrow-up"/></svg></button></div><span class="stage-coordinate" aria-hidden="true">C1 / 展示系列</span></div>
+    </section>
+    <div class="intro-strip"><p>轮廓是第一眼。<br><strong>细节，值得多看一眼。</strong></p><span>模型收藏 · 桌面陈列 · 创作灵感</span><a href="#details">走近一点 <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    <section class="collection section-padding" id="collection" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="overline">找到你的下一件收藏</p><h2 id="collection-title">小小陈列室。</h2></div><p>三种轮廓，三种性格。<br>从这里开始你的收藏清单。</p></div>
+      <div class="collection-toolbar"><div class="category-tabs" role="group" aria-label="模型分类"><button class="category active" data-category="all" aria-pressed="true">全部模型 <span>3</span></button><button class="category" data-category="classic" aria-pressed="false">经典长款</button><button class="category" data-category="compact" aria-pressed="false">紧凑短款</button><button class="category" data-category="future" aria-pressed="false">原创科幻</button></div><label class="sort-label" for="sort">排序<select id="sort"><option value="featured">精选顺序</option><option value="price-asc">价格从低到高</option><option value="price-desc">价格从高到低</option></select></label></div>
+      <div class="search-row" id="search-row" hidden><label for="product-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" id="product-search" placeholder="搜索名称、系列或关键词" autocomplete="off"></label><button class="text-button" id="clear-search">关闭搜索<svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div class="collection-meta"><span id="result-count" role="status" aria-live="polite">3 件概念模型</span><button id="favorite-filter" class="text-button" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg>只看收藏</button></div>
+      <div class="product-grid" id="product-grid"></div><div class="empty-state" id="product-empty" hidden><svg class="icon"><use href="#i-search"/></svg><h3>这里还没有模型。</h3><p id="empty-description">换个关键词或分类，再看看。</p><button class="button button-dark" id="reset-filters">查看全部模型<svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <p class="catalog-note">本系列为原创概念商品，所示价格用于体验购物流程。</p><noscript><p>请启用 JavaScript，以浏览商品、查看详情和操作购物车。</p></noscript>
+    </section>
+    <section class="detail-story" id="details" aria-labelledby="detail-title"><div class="detail-visual"><span class="detail-caption">近距离观察 / NOVA P2</span><img src="assets/nova.png" alt="NOVA P2 模型的石墨黑表面与握柄纹理" width="1536" height="1024" loading="lazy"><span class="detail-caption bottom-caption">轮廓 · 纹理 · 比例</span></div><div class="detail-copy"><p class="overline">喜欢，不止于外形</p><h2 id="detail-title">值得收藏的，<br>是那些细节。</h2><p>一个轮廓、一处切面、一种表面处理。把目光从整体移到局部，模型就有了另一种看法。</p><div class="detail-points"><div><span class="point-line"></span><h3>轮廓的节奏</h3><p>长与短、直线与曲面，让每件模型有自己的性格。</p></div><div><span class="point-line"></span><h3>表面的层次</h3><p>石墨黑的克制，或象牙白的轻盈，尝试不同的陈列组合。</p></div><div><span class="point-line"></span><h3>桌面的位置</h3><p>留出空间，让收藏成为日常视线里的一部分。</p></div></div><button class="text-button" data-open-product="nova">查看 NOVA P2 <svg class="icon"><use href="#i-arrow-up"/></svg></button></div></section>
+    <section class="journal section-padding" id="journal" aria-labelledby="journal-title"><div class="section-heading"><div><p class="overline">给收藏多一点想法</p><h2 id="journal-title">收藏笔记。</h2></div><p>从选一件模型，<br>到布置一个属于自己的角落。</p></div><div class="journal-grid"><button class="journal-card" data-open-note="display"><div class="journal-image journal-image-white"><img src="assets/arc.png" alt="象牙白 ARC S1 玩具模型" width="1536" height="1024" loading="lazy"><span class="journal-image-caption">ARC S1 / 象牙白</span></div><div class="journal-card-copy"><span>陈列灵感 · 3 分钟阅读</span><h3>让第一件模型，成为桌面的主角。<svg class="icon"><use href="#i-arrow-up"/></svg></h3></div></button><button class="journal-card" data-open-note="choose"><div class="journal-image journal-image-dark"><img src="assets/atlas.png" alt="ATLAS C1 玩具模型的完整轮廓" width="1536" height="1024" loading="lazy"><span class="journal-image-caption">ATLAS C1 / 石墨黑</span></div><div class="journal-card-copy"><span>选品笔记 · 2 分钟阅读</span><h3>从轮廓出发，找到自己的偏好。<svg class="icon"><use href="#i-arrow-up"/></svg></h3></div></button></div></section>
+    <section class="about-section" id="about"><div class="about-title"><p class="overline">关于 REPLICA LAB</p><h2>始于喜欢。<br>也始于一次实践。</h2></div><div class="about-copy"><p>这是一个把玩具模型兴趣做成独立站的练习项目。我们用原创概念图、虚构系列与示意价格，搭建一个可以认真逛一逛的收藏商店。</p><p>你可以探索模型、保存收藏、调整购物车，再生成一份演示订单。所有操作都留在当前浏览器，不产生真实支付或发货。</p><a class="button button-outline" href="#collection">回到陈列室<svg class="icon"><use href="#i-arrow"/></svg></a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true"></span><span>REPLICA <b>LAB</b></span></a><p>把热爱，摆上桌面。</p><div><span>© 2026 REPLICA LAB</span><span>概念商店 · 独立站练习</span><button class="text-button" id="last-order-button">查看上次演示订单<svg class="icon"><use href="#i-arrow-up"/></svg></button></div></footer>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="product-dialog-title"><button class="icon-button dialog-close" data-close="product-dialog" aria-label="关闭商品详情"><svg class="icon"><use href="#i-close"/></svg></button><div id="product-detail"></div></dialog>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"><div class="cart-head"><div><p class="overline">慢慢选择，慢慢收藏</p><h2 id="cart-title">购物车 <span id="drawer-count">0</span></h2></div><button class="icon-button" data-close="cart-dialog" aria-label="关闭购物车"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="cart-content" id="cart-content"></div><div class="cart-bottom" id="cart-bottom"><div class="cart-total"><span>合计</span><strong id="cart-total">¥0</strong></div><p>示意金额 · 订单仅用于练习</p><button class="button button-dark checkout-button" id="checkout-button">预览订单<svg class="icon"><use href="#i-arrow"/></svg></button><button class="text-button continue-button" data-close="cart-dialog">继续逛逛</button></div></dialog>
+  <dialog id="order-dialog" class="order-dialog" aria-labelledby="order-title"><button class="icon-button dialog-close" data-close="order-dialog" aria-label="关闭订单"><svg class="icon"><use href="#i-close"/></svg></button><div id="order-content"></div></dialog>
+  <dialog id="note-dialog" class="note-dialog" aria-labelledby="note-title"><button class="icon-button dialog-close" data-close="note-dialog" aria-label="关闭收藏笔记"><svg class="icon"><use href="#i-close"/></svg></button><article id="note-content"></article></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden><svg class="icon"><use href="#i-check"/></svg><span id="toast-text"></span><button id="toast-cart" hidden>查看购物车</button><button class="toast-close" id="toast-close" aria-label="关闭提示"><svg class="icon"><use href="#i-close"/></svg></button></div>
+</body>
+</html>
